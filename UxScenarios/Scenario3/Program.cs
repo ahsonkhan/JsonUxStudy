@@ -61,11 +61,11 @@ namespace Scenario3
                 {
                     break;
                 }
-                dir = Path.GetFullPath(Path.Combine(dir, @"..\"));
                 if (dir.EndsWith("Scenario3\\"))
                 {
                     throw new FileNotFoundException($"The file necessary for this scenario could not be found (stopped searching at project root). Looking for {fileName}.");
                 }
+                dir = Path.GetFullPath(Path.Combine(dir, @"..\"));
                 fullPath = dir + "\\" + fileName;
                 count++;
             }
