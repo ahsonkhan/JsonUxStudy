@@ -22,6 +22,7 @@ namespace Scenario4
         // return the Science class average of all the students' grades. If a student's grade is missing, assume it is 70.
         // Note: Feel free to open input.json to view its contents, but do NOT modify it.
         // Note: Assume the JSON schema is valid and will not change.
+        // Note: Do not use the JsonSerializer to deserialize the string in this scenario.
         private static double AverageGrades(string jsonString)
         {
             double sum = 0;
